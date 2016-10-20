@@ -1,5 +1,5 @@
 {
-  "name": "comment_box",
+  "name": "CommentBox",
   "version": "1.0.0",
   "description": "The comment box sub-module for multiple apps.",
   "main": "View.js",
