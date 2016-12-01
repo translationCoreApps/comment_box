@@ -73,7 +73,21 @@ var style = {
     borderColor: "#000",
     textAlign: "left",
     paddingLeft: "20px"
-  }
+  },
+
+  chevronGlyphicons:{
+    fontSize: "20px",
+    float: "right"
+  },
+
+  commentGlyphicons:{
+    marginLeft: "10px",
+    fontSize: "20px"
+  },
+
+  commentPanel:{
+    padding: "0px",
+  },
 
 
 };
