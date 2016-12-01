@@ -72,7 +72,8 @@ var style = {
     background: "#333333",
     borderColor: "#000",
     textAlign: "left",
-    paddingLeft: "20px"
+    paddingLeft: "20px",
+    outline: "none",
   },
 
   chevronGlyphicons:{
