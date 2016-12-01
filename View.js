@@ -47,12 +47,19 @@ class CommentBox extends React.Component {
   }
 
   render() {
+    let chevron = <Glyphicon glyph="menu-down" style={{fontSize: "20px"}}/>;
+
     return (
       <div>
-      <Button onClick={ ()=> this.setState({ open: !this.state.open })}>
-          Make a Comment <Glyphicon glyph="comment" />
+      <Button onClick={ ()=> this.setState({ open: !this.state.open })} style={{width: "100%", borderRadius: "0%", color: "#fff",
+    background: "#333333",
+    borderColor: "#000",
+    textAlign: "left",
+    paddingLeft: "20px"}}>
+          <span style={{marginLeft: "20px"}}>Make a Commen</span><Glyphicon glyph="comment" style={{marginLeft: "10px", fontSize: "20px"}}/>
+          {chevron}
         </Button>
-        <Panel collapsible expanded={this.state.open}>
+        <Panel collapsible expanded={this.state.open} style={{padding: "0px"}}>
       <div style={style.paper}>
         <div style={style.sideline}></div>
         <div style={style.paperContent}>
