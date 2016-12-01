@@ -47,27 +47,26 @@ class CommentBox extends React.Component {
   }
 
   render() {
-    let chevron = <Glyphicon glyph="menu-down" style={{fontSize: "20px"}}/>;
-
+    const chevron = this.state.open ? <Glyphicon glyph="menu-up" style={{fontSize: "20px", float: "right"}}/> : <Glyphicon glyph="menu-down" style={{fontSize: "20px", float: "right"}}/>;
     return (
       <div>
-      <Button onClick={ ()=> this.setState({ open: !this.state.open })} style={{width: "100%", borderRadius: "0%", color: "#fff",
-    background: "#333333",
-    borderColor: "#000",
-    textAlign: "left",
-    paddingLeft: "20px"}}>
-          <span style={{marginLeft: "20px"}}>Make a Commen</span><Glyphicon glyph="comment" style={{marginLeft: "10px", fontSize: "20px"}}/>
+        <Button onClick={ ()=> this.setState({ open: !this.state.open })} style={style.CommentButton}>
+          <span style={{marginLeft: "20px"}}>Make a comment</span>
+          <Glyphicon glyph="comment" style={{marginLeft: "10px", fontSize: "20px"}}/>
           {chevron}
         </Button>
         <Panel collapsible expanded={this.state.open} style={{padding: "0px"}}>
-      <div style={style.paper}>
-        <div style={style.sideline}></div>
-        <div style={style.paperContent}>
-          <textarea autofocus style={style.textarea} placeholder="Notes" value={this.state.comment}
-                    onChange={this.handleComment.bind(this)} />
+        <div style={{margin: "-15px"}}>
+          <div style={style.paper}>
+          <div style={style.sideline}></div>
+            <div style={style.paperContent}>
+              <textarea autofocus style={style.textarea} placeholder="Notes"
+                        value={this.state.comment}
+                        onChange={this.handleComment.bind(this)} />
+            </div>
+          </div>
         </div>
-      </div>
-      </Panel>
+        </Panel>
       </div>
     );
   }

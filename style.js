@@ -35,10 +35,8 @@ var style = {
     height: "200px",
     marginTop: "0px",
     background: "#fafafa",
-    borderRadius: "10px",
     boxShadow: "0px 2px 8px rgba(0,0,0,.3)",
     overflow: "hidden",
-    marginBottom: "15px",
   },
 
   paperContent:{
@@ -65,6 +63,16 @@ var style = {
     fontSize: "18px",
     boxSizing: "border-box",
     zIndex: "1",
+  },
+
+  CommentButton: {
+    width: "100%",
+    borderRadius: "0%",
+    color: "#fff",
+    background: "#333333",
+    borderColor: "#000",
+    textAlign: "left",
+    paddingLeft: "20px"
   }
 
 
