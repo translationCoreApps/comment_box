@@ -2,6 +2,8 @@
 
 const api = window.ModuleApi;
 const React = api.React;
+const RB = api.ReactBootstrap;
+const {Glyphicon, Button, Panel} = RB;
 const style = require('./style');
 
 const NAMESPACE = 'CommentBox';
@@ -10,7 +12,8 @@ class CommentBox extends React.Component {
   constructor() {
     super();
     this.state = {
-      comment: ""
+      comment: "",
+      open: false
     };
   }
 
@@ -45,12 +48,19 @@ class CommentBox extends React.Component {
 
   render() {
     return (
+      <div>
+      <Button onClick={ ()=> this.setState({ open: !this.state.open })}>
+          Make a Comment <Glyphicon glyph="comment" />
+        </Button>
+        <Panel collapsible expanded={this.state.open}>
       <div style={style.paper}>
         <div style={style.sideline}></div>
         <div style={style.paperContent}>
           <textarea autofocus style={style.textarea} placeholder="Notes" value={this.state.comment}
                     onChange={this.handleComment.bind(this)} />
         </div>
+      </div>
+      </Panel>
       </div>
     );
   }
