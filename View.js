@@ -54,7 +54,7 @@ class CommentBox extends React.Component {
       <div>
         <Button onClick={ ()=> this.setState({ open: !this.state.open })}
                 style={style.CommentButton}>
-          <span style={{marginLeft: "20px", textShadow: "none"}}>Make a comment</span>
+          <span style={{marginLeft: "0px", textShadow: "none"}}>Make a comment</span>
           <Glyphicon glyph="comment" style={style.commentGlyphicons}/>
           {chevron}
         </Button>
