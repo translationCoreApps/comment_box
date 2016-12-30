@@ -63,6 +63,6 @@ class CommentBox extends React.Component {
 }
 
 module.exports = {
-    name: "CommentBox",
-    view: CommentBox
+  view: CommentBox,
+  name: NAMESPACE
 }
