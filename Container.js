@@ -29,7 +29,7 @@ class CommentBox extends React.Component {
     let currentCheck = this.props.currentCheck;
     let value = e.target.value;
     this.setState({comment: e.target.value});
-    api.getDataFromCheckStore(NAMESPACE)['currentChanges'] = value;
+    this.props.commentBoxStore['currentChanges'] = value;
     currentCheck.comment = value;
   }
 
