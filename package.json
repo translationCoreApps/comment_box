@@ -2,7 +2,7 @@
   "name": "CommentBox",
   "version": "1.0.0",
   "description": "The comment box sub-module for multiple apps.",
-  "main": "View.js",
+  "main": "Container.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
