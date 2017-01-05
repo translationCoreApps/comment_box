@@ -1,6 +1,6 @@
 {
   "name": "CommentBox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The comment box sub-module for multiple apps.",
   "main": "Container.js",
   "scripts": {
