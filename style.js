@@ -29,10 +29,10 @@ var style = {
 
   paper:{
     position: "relative",
-    width: "100%",
+    width: "280px",
     maxWidth: "100%",
     minWidth: "100%",
-    height: "200px",
+    height: "350px",
     marginTop: "0px",
     background: "#fafafa",
     boxShadow: "0px 2px 8px rgba(0,0,0,.3)",
