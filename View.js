@@ -10,7 +10,7 @@ class View extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{height: "100%"}}>
         <div style={style.paper}>
           <div style={style.sideline}></div>
             <div style={style.paperContent}>
