@@ -32,7 +32,7 @@ var style = {
     width: "280px",
     maxWidth: "100%",
     minWidth: "100%",
-    height: "350px",
+    height: "100%",
     marginTop: "0px",
     background: "#fafafa",
     boxShadow: "0px 2px 8px rgba(0,0,0,.3)",
