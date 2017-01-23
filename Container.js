@@ -31,6 +31,7 @@ class CommentBox extends React.Component {
     this.setState({comment: e.target.value});
     this.props.commentBoxStore['currentChanges'] = value;
     currentCheck.comment = value;
+    this.props.updateCurrentCheck(currentCheck);
   }
 
   togglePanel(){
