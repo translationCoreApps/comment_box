@@ -16,7 +16,8 @@ class View extends React.Component {
             <div style={style.paperContent}>
               <textarea autofocus style={style.textarea} placeholder="Notes"
                         value={this.props.comment}
-                        onChange={this.props.handleComment.bind(this)} />
+                        onChange={this.props.handleComment.bind(this)}
+                        onBlur={this.props.handleSaveComment.bind(this)}/>
             </div>
         </div>
       </div>

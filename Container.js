@@ -13,7 +13,6 @@ class CommentBox extends React.Component {
     super();
     this.state = {
       comment: "",
-      open: false
     };
   }
 
@@ -26,25 +25,24 @@ class CommentBox extends React.Component {
   }
 
   handleComment(e) {
-    let currentCheck = this.props.currentCheck;
     let value = e.target.value;
     this.setState({comment: e.target.value});
+  }
+
+  handleSaveComment(){
+    let currentCheck = this.props.currentCheck;
+    let value = this.state.comment;
     this.props.commentBoxStore['currentChanges'] = value;
     currentCheck.comment = value;
     this.props.updateCurrentCheck(currentCheck);
   }
 
-  togglePanel(){
-    this.setState({ open: !this.state.open });
-  }
-
   render() {
     return (
       <View
-        open={this.state.open}
         comment={this.state.comment}
-        togglePanel={this.togglePanel.bind(this)}
         handleComment={this.handleComment.bind(this)}
+        handleSaveComment={this.handleSaveComment.bind(this)}
       />
     );
   }
