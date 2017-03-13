@@ -32,7 +32,6 @@ class CommentBox extends React.Component {
   handleSaveComment(){
     let currentCheck = this.props.currentCheck;
     let value = this.state.comment;
-    this.props.commentBoxStore['currentChanges'] = value;
     currentCheck.comment = value;
     this.props.updateCurrentCheck(currentCheck);
   }
